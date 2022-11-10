@@ -1,12 +1,13 @@
 import React from 'react'
 
-export default function TVPage() {
+export default function TVPage(props) {
+
   return (
-    <div className="card">
-                        <div className="tvImage">            
+        <div className="card">
+                        <div className="tvImage" style={{backgroundImage: 'url("' + props.image + '")'}}>            
                             <div className="bottom">
-                                <h1>The all-new 2022 Neo QLED TVs</h1>
-                                <h3>Enjoy entertainment without boundaries, where the only edge you'll notice is the edge of your seat.</h3>
+                                <h1>{props.title}</h1>
+                                <h3>{props.desc}</h3>
     
                                 <button>Learn more</button>
                                 <button>Shop now</button>

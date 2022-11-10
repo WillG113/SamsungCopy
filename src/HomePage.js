@@ -1,14 +1,12 @@
 import React from 'react'
 
-export default function HomePage() {
+export default function HomePage(props) {
   return (
     <div className="card">
-        <div className="homeImage">
-            <div className="spacer2"></div>
-
-            <div className="bottom2">
-                <h1>BESPOKE AI™ Laundry</h1>
-                <h3>11kg with SpaceMax™</h3>
+        <div className="homeImage"  style={{backgroundImage: 'url("' + props.image + '")'}}>
+            <div className="bottom">
+                <h1>{props.title}</h1>
+                <h3>{props.desc}</h3>
 
                 <button>Learn more</button>
                 <button>Shop now</button>

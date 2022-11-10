@@ -12,6 +12,12 @@ html {
     width: 100%;
 }
 
+.samsung {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
 .banner {
     height: auto;
     width: 50%;
@@ -76,6 +82,17 @@ html {
     text-decoration: none;
   }
 
+  .navBar li button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+
+
   
   .navBar li a:hover {
     background-color: #111;
@@ -89,7 +106,7 @@ html {
     padding: 0;
     overflow: hidden;
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   
   li {
@@ -104,6 +121,15 @@ html {
     font-weight: bolder;
     padding: 14px 16px;
     text-decoration: none;
+  }
+
+  li button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
   }
 
   
@@ -121,32 +147,37 @@ html {
     height:auto;
     background-color:#fff;
     display:grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 50% 50%;
     grid-row: auto auto;
-    grid-column-gap: 20px;
+    grid-column-gap:0px;
     grid-row-gap: 20px;
+    overflow:hidden;
   }
 
     .box123 {
-        width: 100%;
-      background-color:#333;
-      padding:20px;
-      border-radius:10px;
-      color:#fff;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:40px;
-      font-family:sans-serif;
+        width: 90%;
+        height:320px;
+        background-color:#333;
+        border-radius:10px;
+        color:#fff;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:20px;
+        font-family:sans-serif;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-image: url("https://images.samsung.com/is/image/samsung/assets/uk/homepage/SmallTile_FreeTab_DT_330x330.jpg?$330_330_JPG$");
+        background-size: cover;
+        border: 1px solid black;
     }
-
 
 
 
   .latestDeals {
     margin: 0 auto;
     align-content: center;
-    width: 70%;
+    width: 60%;
   }
 
 
@@ -155,13 +186,12 @@ html {
     width:100%;
     height:auto;
     display:grid;
-    grid-template-columns: 50% 100%;
+    grid-template-columns: 49% 49%;
     grid-row: auto auto;
     grid-column-gap: 10px;
-    grid-row-gap: 5px;
-    background-color: blue;
-
+    grid-row-gap: 10px;
   }
+
   .container3{
     margin: 0px auto;
     width:100%;
@@ -171,7 +201,6 @@ html {
     grid-row: auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    background-color: green;
   }
       
     .box{
@@ -179,11 +208,11 @@ html {
         height: auto;
       background-color:#fff;
       border-radius:10px;
-      color:#fff;
+      color:#000;
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:40px;
+      font-size:10px;
       font-family:sans-serif;
       border: 2px solid #fff;
       overflow:hidden;
@@ -192,22 +221,22 @@ html {
   
     .box2{
     width: 100%;
-    height: auto;
+    height: 700px;
       background-color:#f5f5f5;
       border-radius:10px;
-      color:#fff;
+      color:#000;
       display:flex;
       align-items:center;
       justify-content:center;
       font-size:40px;
       font-family:sans-serif;
       border: 1px solid black;
-      
-      }
+      background-image: url("https://images.samsung.com/is/image/samsung/assets/uk/homepage/Week44_FreeSoundbar_dt_684x684.jpg?$684_684_JPG$");
+      background-size: cover;
+    }
 
       .images {
         width: 100%;
-        background-color: red;
       }
 
       .page {
@@ -275,6 +304,16 @@ html {
         color:white;
       }
 
+      .Title {
+       margin: 0px auto;
+       margin-top: 400px;
+      }
+
+      .SmallTitle {
+        margin: 0px auto;
+        margin-top: 175px;
+        font-size: 20px;
+      }
 
 
 
@@ -308,6 +347,7 @@ html {
       .tv {
         width: 55%;
         margin: 0 auto;
+        margin-top: -100px;
       }
 
       .tvImage {
@@ -315,6 +355,7 @@ html {
         width: 100%;
         margin-top: 100px;
         margin: 0 auto;
+        background-position: center;
       }
 
       .tvImage {
@@ -327,10 +368,20 @@ html {
 
       .top h1 {
         font-size: 32px;
+        
       }
 
-      .bottom {
-        margin-bottom: 0px;
+      .tv .bottom {
+        position: relative;
+        top: 625px;
+        z-index: 4
+      }
+
+      .tv .top {
+        position:relative;
+        top: 190px;
+        z-index:4;
+        color:white;
       }
 
 
@@ -338,6 +389,7 @@ html {
       .home {
         width: 55%;
         margin: 0 auto;
+        margin-top:-155px;
       }
 
 
@@ -351,8 +403,16 @@ html {
         margin-top: 0px;
       }
 
-       .bottom2 {
-        margin-bottom: 0px;
+      .home .bottom {
+        position: relative;
+        top: 625px;
+        z-index: 4
+      }
+
+      .home .top {
+        position:relative;
+        top: 150px;
+        z-index:4;
       }
 
 
@@ -447,7 +507,7 @@ html {
       }
 
       .scrolling-wrapper::-webkit-scrollbar {
-        /*display: none;*/
+        display: none;
       }
 
       html::-webkit-scrollbar {

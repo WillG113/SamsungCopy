@@ -3,14 +3,33 @@ import MobilePage from './MobilePage';
 
 export default function Mobile() {
 
-    const title = ["Test", "Test2", "Test3", "Test4", "Test5"];
-    const desc = ["Desc", "Desc2", "Desc3", "Desc4", "Desc5"];
+    const title = [
+        "Galaxy Z Fold4",
+        "Galaxy Z Flip4 Bespoke Edition",
+        "Galaxy Z Flip4",
+        "Galaxy Watch5 | Watch5 Pro",
+        "Galaxy Buds2 Pro"
+    ];
+    const desc = [
+        "Claim a free Galaxy Tab S6 Lite and enjoy 12 months of Disney+ on us",
+        "Claim a free Galaxy Tab S6 Lite and enjoy 12 months of Disney+ on us",
+        "Claim a free Galaxy Tab S6 Lite and enjoy 12 months of Disney+ on us",
+        "",
+        ""
+    ];
+    const images = [
+        "https://images.samsung.com/is/image/samsung/assets/uk/2208/home/Home_Q4_KV_MX-KV_743X418_pc.jpg?$743_418_PNG$",
+        "https://images.samsung.com/is/image/samsung/assets/uk/2208/home/Home_B4_Bespoke_KV_MX-KV_743x418_pc.jpg?$743_418_PNG$",
+        "https://images.samsung.com/is/image/samsung/assets/uk/2208/home/Home_B4_KV_MX-KV_743X418_pc.jpg?$743_418_PNG$",
+        "https://images.samsung.com/is/image/samsung/assets/uk/2208/home/HOME_Watch5-Combo_KV_MX-KV_743X418_pc.jpg?$743_418_PNG$",
+        "https://images.samsung.com/is/image/samsung/assets/uk/2208/home/HOME_Buds2-Pro_KV_MX-KV_743X418_pc.jpg?$743_418_PNG$",
+        ]
     const scrollRef = createRef();
 
     function pageFunction() {
         const pageContent = [];
         for(let i = 0; i < 5; i++) {
-            pageContent.push(<MobilePage key={i} title={title[i]} desc={desc[i]}></MobilePage>);
+            pageContent.push(<MobilePage key={i} title={title[i]} desc={desc[i]} image={images[i]}></MobilePage>);
         }
         return pageContent;
     }

@@ -4,7 +4,7 @@ export default function NavBar() {
   return (
     <div className="navBar">
         <ul className="nav">
-            <li>Samsung</li>
+            <li className="samsung">Samsung</li>
             <li><button>Shop</button></li>
             <li><button>Mobile</button></li>
             <li><button>TV & AV</button></li>
